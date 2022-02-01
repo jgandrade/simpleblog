@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<script src="/index.js" defer></script>
+    <main>
+        <div class="home">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore aperiam architecto commodi totam
+                blanditiis autem voluptatum, omnis, nihil tempore impedit saepe eligendi temporibus? In, sequi saepe.
+                Non hic laboriosam architecto?</p>
+        </div>
+        <div class="blogs-contents">
+            <% title.forEach((e,index)=>{ %>
+                <div class="blog" name="blog" value="blog1">
+                    <h2 class="content-title"><%= title[index] %></h2>
+                    <p class="content"><%= message[index] %></p>
+                    <a href="/blogs/<%= url[index] %>" class="read-more">Read More</a>
+                </div>
+                <%}); %>
+        </div>
+    </main>
+    </body>
+
+    </html>
